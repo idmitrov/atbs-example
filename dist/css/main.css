@@ -304,9 +304,14 @@ html {
   display: -ms-flexbox;
   display: flex;
 }
-.atbs-row.atbs-h-center {
+.atbs-row.atbs-c-align-center {
   -ms-flex-line-pack: center;
   align-content: center;
+}
+.atbs-row.atbs-v-align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .atbs-header {
   background-color: #131313;
@@ -320,12 +325,6 @@ html {
 }
 .atbs-heading img {
   display: block;
-}
-.atbs-navigation {
-  display: inline-block;
-  width: calc(100% - 11rem);
-  text-align: center;
-  vertical-align: middle;
 }
 .atbs-navigation ul {
   list-style-type: none;
