@@ -215,6 +215,28 @@ html {
 .atbs-text-uppercase {
   text-transform: uppercase;
 }
+.atbs-striped-bottom {
+  padding-bottom: 1.6rem;
+  border-bottom: dashed 0.1rem;
+}
+.atbs-striped-bottom.atbs-striped-color-blue {
+  border-color: #0098aa;
+}
+.atbs-striped-bottom.atbs-striped-color-orange {
+  border-color: #ff6b37;
+}
+.atbs-striped-bottom.atbs-striped-color-yellow {
+  border-color: #e2c127;
+}
+.atbs-striped-bottom.atbs-striped-color-pale {
+  border-color: #e2d4c5;
+}
+.atbs-striped-bottom.atbs-striped-color-dark {
+  border-color: #131313;
+}
+.atbs-striped-bottom.atbs-striped-color-white {
+  border-color: #fff;
+}
 .atbs-col-1 {
   width: 8.333333333333332%;
   padding-left: 1.6rem;

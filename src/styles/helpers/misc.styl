@@ -6,4 +6,15 @@
     .text-uppercase {
         text-transform: uppercase;
     }
+
+    .striped-bottom {
+        padding-bottom: toUnit(16);
+        border-bottom: dashed toUnit(1);
+
+        for $colorName, $colorValue in $ui.color {
+            &.striped-color-{$colorName} {
+                border-color: $colorValue;
+            }
+        }
+    }
 }
