@@ -1,0 +1,21 @@
++init() {
+    for $currentLength in 1..$ui.grid.length {
+        $colSize = $currentLength / $ui.grid.length * 100%;
+
+        .col-{$currentLength} {
+            width: $colSize;
+            padding-left: toUnit(16);
+            padding-right: toUnit(16);
+        }
+    }
+    
+    .row {
+        margin-left: toNegative(toUnit(16));
+        margin-right: toNegative(toUnit(16));
+        display: flex;
+        
+        &.h-center {
+            align-content: center;
+        }
+    }
+}

@@ -46,7 +46,7 @@ toNegative($value) {
         error('Cannot set string to-negative');
     }
 
-    return 0 - $value;
+    return s('-%s', $value);
 }
 
 /**
