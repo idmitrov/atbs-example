@@ -1,0 +1,13 @@
+/**
+ *  @name alignings
+ *  @desc generate $ui.alignings to helper classes
+ */
++init() {
+    for $aligningKey, $aligning in $ui.alignings {
+        for $aligningValue in $aligning.values {
+            .{$aligning['className']}-{$aligningValue} {
+                {$aligning['propName']}: unquote($aligningValue);
+            }
+        }
+    }
+}

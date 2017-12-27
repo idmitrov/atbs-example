@@ -1,0 +1,38 @@
++init() {
+    $backgroundNames =  'company_intro' 'company_benefits';
+
+    for $backgroundName in $backgroundNames {
+        $backgroundSelector = replace('_', '-', $backgroundName);
+
+        .{$backgroundSelector} {
+            padding-top: toUnit(100);
+            padding-bottom: toUnit(50);
+            text-align: center;
+            background-image: url(unquote($ui.path.image) + '/backgrounds/' + unquote($backgroundName) + '.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .decoration-bottom {
+        text-align: center;
+
+        &:after {
+            content: '';
+            display: block;
+            background: url(unquote($ui.path.image) + '/icons/horizontal_line.png') center no-repeat;
+            padding: 1.6rem;
+        }
+    }
+
+    .arrow {
+        display: inline-block;
+        width: toUnit(80);
+        height: toUnit(80);
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: url(unquote($ui.path.image) + '/icons/arrow_icon.png') center no-repeat;
+    }
+}

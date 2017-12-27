@@ -1,0 +1,27 @@
+/**
+ *  @name init
+ *  @desc Initialize .styl file by prefixing the selectors inside init block scope
+ *
+ *  @param {String} $prefix
+ */
+init($prefix = $ui.prefix) {
+    +prefix-classes($prefix) {
+        {block}
+    }
+}
+
+/**
+ *  @name breakpoint
+ *  @desc generate media query by given params
+ *
+ *  @param {unit} $breakpoint
+ *  @param {CSS property} $condition
+ *  @param {CSS property} $mediaType
+ */
+breakpoint($breakpoint, $condition=min-width, $mediaType = screen) {
+    $query = s('%s and (%s: %s)', $mediaType, $condition, $breakpoint);
+
+    @media $query {
+        {block}
+    }
+}

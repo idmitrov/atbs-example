@@ -1,0 +1,15 @@
+/**
+ *  @name separations
+ *  @desc generate $ui.separations to helper classes
+ */
++init() {
+    for $side in $ui.separations {
+        .margin-{$side} {
+            margin-{$side}: toUnit(16);
+        }
+
+        .padding-{$side} {
+            margin-{$side}: toUnit(16);
+        }
+    }
+}

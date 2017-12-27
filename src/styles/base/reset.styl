@@ -1,0 +1,18 @@
+* {
+    &,
+    &::before,
+    &::after {
+        margin: removeQuote($ui.constant.zero);
+        padding: removeQuote($ui.constant.zero);
+        box-sizing: removeQuote($ui.default.box);
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: s('%spx', unquote($ui.default.size));
+    color: unquote($ui.default.color);
+}

@@ -1,0 +1,64 @@
+/**
+*   @name toUnit
+*   @desc Convert to unit depending of app.responsive.unit
+*   using the function helps easly to switch app.responsive.unit value between rem -> px
+*
+*   @param {Number} Value
+*   @param {CSS Property} unit (opt)
+*/
+toUnit($value, $unit = $ui.default.unit) {
+    $value = removeQuote($value);
+    $unit = removeQuote($unit);
+    
+    if (typeof($value) == string) {
+        error('Value param cannot be a string');
+    }
+
+    if (typeof($unit) == string) {
+        error('Unit param cannot be a string');
+    }
+
+    if ($value == 0) {
+        return $value;
+    }
+
+    if ($unit== \%) {
+        return s('%s%', $value);
+    }
+
+    if ($unit == rem) {
+        $value /= 10;
+    }
+
+    return s('%s%s', $value, unquote($unit));
+}
+
+/**
+ *   @name toNegative
+ *   @desc Return the negative value
+ *
+ *   @param {Number} value
+ */
+toNegative($value) {
+    $value = removeQuote($value);
+
+    if (typeof($value) == 'string') {
+        error('Cannot set string to-negative');
+    }
+
+    return 0 - $value;
+}
+
+/**
+ *   @name removeQuote
+ *   @desc unquote but firstly check if is needed to be unqoted
+ *
+ *   @param {Any} value
+ */
+removeQuote($value) {    
+    if (typeof($value) == 'string') {
+        $value = unquote($value);
+    }
+
+    return $value;
+}

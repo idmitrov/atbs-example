@@ -1,0 +1,72 @@
+/**
+ *  @name $ui
+ *  @type {Object}
+ *  @desc default config
+ */
+$ui = {
+    "prefix": "",
+    "constant": {
+        "zero": "0",
+        "auto": "auto",
+        "full": "100"
+    },
+    "default": {
+        "unit": "rem",
+        'font': 'Arial',
+        "size": "10",
+        "color": "#000",
+        "background": "#FFF",
+        "box": "border-box"
+    },
+    "font": {},
+    "color": {
+        "white": "#FFF",
+        "black": "#000",
+        "red": "#F00",
+        "green": "#0F0",
+        "blue": "#00F"
+    },
+    "path": {
+        "image": "../images",
+        "font": "../fonts"
+    },
+    "alignings": {
+        "vertical": {
+            "propName": "vertical-align",
+            "className": "v-align",
+            "values": "top" "middle" "bottom"
+        },
+        "horizontal": {
+            "propName": "text-align",
+            "className": "h-align",
+            "values": "left" "center" "right"
+        }
+    },
+    "separations": 'top' 'right' 'bottom' 'left' 'h-auto' 'v-auto',
+    "grid": {
+        "length": "12"
+    },
+    "responsive": {
+        "breakpoint": {
+            "xsm": "0",
+            "sm": "576px",
+            "md": "768px",
+            "lg": "992px",
+            "xlg": "1200px" 
+        }
+    }
+};
+
+/**
+ *  @name $config
+ *  @type {Object}
+ *  @desc Override $ui config from external JSON file
+ */
+$config = json('config.json', { 
+    hash: true,
+    optional: true
+});
+
+if ($config) {
+    $ui = merge($ui, $config);
+}

@@ -1,0 +1,16 @@
+$__modules__ = {
+    base: 'variables' 'functions' 'mixins' 'reset',
+    helpers: 'dimensions' 'typo' 'colors' 'alignings' 'separations' 'sprites' 'misc',
+    components: 'grid',
+    layout: 'header' 'navigation' 'content' 'footer',
+    pages: 'home',
+    themes: 'default'
+}
+
+for moduleName, components in $__modules__ {
+    for component in components {
+        $path = pathjoin(moduleName, component);
+        
+        @import $path;
+    }
+}

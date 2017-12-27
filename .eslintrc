@@ -1,0 +1,25 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "extends": ["eslint:recommended", "google"],
+    "plugins": [
+        "html"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "windows"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "comma-dangle": ["error", "always"],
+        "no-cond-assign": ["error", "always"],
+        "no-console": "off",
+        "no-var": "off"
+    },
+    "globals": {
+        "Polymer": true,
+        "require": true,
+        "window": true
+      }
+  }

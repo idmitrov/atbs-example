@@ -1,0 +1,15 @@
+/**
+ *  @name colors
+ *  @desc generate $ui.color to helper classes
+ */
++init() {
+    for $colorName, $colorValue in $ui.color {
+        .bg-{$colorName} {
+            background-color: removeQuote($colorValue);
+        }
+
+        .text-{$colorName} {
+            color: removeQuote($colorValue);
+        }
+    }
+}

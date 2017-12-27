@@ -1,0 +1,281 @@
+/**
+ *  @name $ui
+ *  @type {Object}
+ *  @desc default config
+ */
+/**
+ *  @name $config
+ *  @type {Object}
+ *  @desc Override $ui config from external JSON file
+ */
+/**
+*   @name toUnit
+*   @desc Convert to unit depending of app.responsive.unit
+*   using the function helps easly to switch app.responsive.unit value between rem -> px
+*
+*   @param {Number} Value
+*   @param {CSS Property} unit (opt)
+*/
+/**
+ *   @name toNegative
+ *   @desc Return the negative value
+ *
+ *   @param {Number} value
+ */
+/**
+ *   @name removeQuote
+ *   @desc unquote but firstly check if is needed to be unqoted
+ *
+ *   @param {Any} value
+ */
+/**
+ *  @name init
+ *  @desc Initialize .styl file by prefixing the selectors inside init block scope
+ *
+ *  @param {String} $prefix
+ */
+/**
+ *  @name breakpoint
+ *  @desc generate media query by given params
+ *
+ *  @param {unit} $breakpoint
+ *  @param {CSS property} $condition
+ *  @param {CSS property} $mediaType
+ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-size: 10px;
+  color: #000;
+}
+.atbs-full-height {
+  height: 100vh;
+}
+.atbs-full-height.atbs-min-height {
+  height: auto;
+  min-height: 100vh;
+}
+.atbs-full-width {
+  width: 10000%;
+}
+.atbs-full-width.atbs-min-width {
+  width: auto;
+  min-width: 10000%;
+}
+/**
+ *  @name colors
+ *  @desc generate $ui.color to helper classes
+ */
+.atbs-bg-blue {
+  background-color: #0098aa;
+}
+.atbs-text-blue {
+  color: #0098aa;
+}
+.atbs-bg-orange {
+  background-color: #ff6b37;
+}
+.atbs-text-orange {
+  color: #ff6b37;
+}
+.atbs-bg-yellow {
+  background-color: #e2c127;
+}
+.atbs-text-yellow {
+  color: #e2c127;
+}
+.atbs-bg-pale {
+  background-color: #e2d4c5;
+}
+.atbs-text-pale {
+  color: #e2d4c5;
+}
+.atbs-bg-dark {
+  background-color: #131313;
+}
+.atbs-text-dark {
+  color: #131313;
+}
+.atbs-bg-white {
+  background-color: #fff;
+}
+.atbs-text-white {
+  color: #fff;
+}
+/**
+ *  @name alignings
+ *  @desc generate $ui.alignings to helper classes
+ */
+.atbs-v-align-top {
+  vertical-align: top;
+}
+.atbs-v-align-middle {
+  vertical-align: middle;
+}
+.atbs-v-align-bottom {
+  vertical-align: bottom;
+}
+.atbs-h-align-left {
+  text-align: left;
+}
+.atbs-h-align-center {
+  text-align: center;
+}
+.atbs-h-align-right {
+  text-align: right;
+}
+/**
+ *  @name separations
+ *  @desc generate $ui.separations to helper classes
+ */
+.atbs-margin-top {
+  margin-top: 1.6rem;
+}
+.atbs-padding-top {
+  margin-top: 1.6rem;
+}
+.atbs-margin-right {
+  margin-right: 1.6rem;
+}
+.atbs-padding-right {
+  margin-right: 1.6rem;
+}
+.atbs-margin-bottom {
+  margin-bottom: 1.6rem;
+}
+.atbs-padding-bottom {
+  margin-bottom: 1.6rem;
+}
+.atbs-margin-left {
+  margin-left: 1.6rem;
+}
+.atbs-padding-left {
+  margin-left: 1.6rem;
+}
+.atbs-margin-h-auto {
+  margin-h-auto: 1.6rem;
+}
+.atbs-padding-h-auto {
+  margin-h-auto: 1.6rem;
+}
+.atbs-margin-v-auto {
+  margin-v-auto: 1.6rem;
+}
+.atbs-padding-v-auto {
+  margin-v-auto: 1.6rem;
+}
+.atbs-company-intro {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-image: url("../images/backgrounds/company_intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.atbs-company-benefits {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  background-image: url("../images/backgrounds/company_benefits.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.atbs-decoration-bottom {
+  text-align: center;
+}
+.atbs-decoration-bottom:after {
+  content: '';
+  display: block;
+  background: url("../images/icons/horizontal_line.png") center no-repeat;
+  padding: 1.6rem;
+}
+.atbs-arrow {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: url("../images/icons/arrow_icon.png") center no-repeat;
+}
+.atbs-cursor-pointer {
+  cursor: pointer;
+}
+.atbs-header {
+  background-color: #131313;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  text-align: left;
+}
+.atbs-heading {
+  vertical-align: middle;
+  display: inline-block;
+}
+.atbs-heading img {
+  display: block;
+}
+.atbs-navigation {
+  display: inline-block;
+  width: calc(100% - 11rem);
+  text-align: center;
+  vertical-align: middle;
+}
+.atbs-navigation ul {
+  list-style-type: none;
+}
+.atbs-navigation li {
+  display: inline-block;
+  padding: 0 2.5rem;
+}
+.atbs-navigation a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.atbs-navigation a:hover {
+  color: #e2c127;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.atbs-container {
+  max-width: 120rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  margin: 0 auto;
+}
+footer {
+  background-color: #131313;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+section {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+section h2 {
+  font-size: 4.8rem;
+}
+section p {
+  font-size: 3.6rem;
+}
+section .atbs-separated-bottom {
+  margin-bottom: 4.2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

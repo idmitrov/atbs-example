@@ -1,0 +1,27 @@
+{
+    "prefix": "atbs-",
+    "color": {
+        "blue": "#0098AA",
+        "orange": "#FF6B37",
+        "yellow": "#E2C127",
+        "pale": "#E2D4C5",
+        "dark": "#131313",
+        "white": "#FFF"
+    },
+    "responsive": {
+        "breakpoint": {
+            "xsm": "0",
+            "sm": "420px",
+            "md": "768px",
+            "lg": "1024px",
+            "xlg": "1200px" 
+        }
+    },
+    "font": {
+        "openSans": {
+            "family": "open-sans",
+            "path": "open-sans",
+            "extensions": "eot, ttf"
+        }
+    }
+}
