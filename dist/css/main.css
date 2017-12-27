@@ -212,6 +212,9 @@ html {
 .atbs-cursor-pointer {
   cursor: pointer;
 }
+.atbs-text-uppercase {
+  text-transform: uppercase;
+}
 .atbs-header {
   background-color: #131313;
   padding-top: 0.8rem;
