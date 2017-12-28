@@ -421,5 +421,9 @@ section p {
 section .atbs-separated-bottom {
   margin-bottom: 4.2rem;
 }
+article h2 {
+  font-family: open-sans;
+  font-size: 3.2rem;
+}
 
 /*# sourceMappingURL=main.css.map */
