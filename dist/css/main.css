@@ -271,6 +271,9 @@ html {
 .atbs-text-uppercase {
   text-transform: uppercase;
 }
+.atbs-text-size-normal {
+  font-size: 1.6rem;
+}
 .atbs-text-decoration-none {
   text-decoration: none;
 }
