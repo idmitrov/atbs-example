@@ -1,0 +1,28 @@
++init() {
+    .button {
+        font-family: $ui.font.OpenSans.family;
+        font-size: toUnit(16);
+        font-weight: bold;
+        border-radius: toUnit(6);
+        border: none;
+        padding: toUnit(10) toUnit(16);
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+
+        &.button-default {
+            background-color: $ui.color.orange;
+            color: $ui.color.white;
+            transition: .5s all;
+                border: solid toUnit(1) transparent;
+            // box-shadow: inset 0 toUnit(1) toUnit(2) $ui.color.dark;
+
+            &:hover {
+                background-color: $ui.color.white;
+                color: $ui.color.orange;
+                transition: .5s all;
+                border: solid toUnit(1) $ui.color.orange;
+            }
+        }        
+    }
+}
