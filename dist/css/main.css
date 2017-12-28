@@ -428,6 +428,7 @@ section .atbs-separated-bottom {
 article h2 {
   font-family: open-sans;
   font-size: 3.2rem;
+  padding-bottom: 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */
