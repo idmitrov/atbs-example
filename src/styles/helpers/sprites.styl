@@ -35,4 +35,19 @@
         outline: none;
         background: url(unquote($ui.path.image) + '/icons/arrow_icon.png') center no-repeat;
     }
+
+    .icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: toUnit(25);
+        height: toUnit(25);
+        
+        &.icon-user {
+            background: url(unquote($ui.path.image) + '/icons/user_icon.png') center no-repeat;
+        }
+
+        &.icon-lock {
+            background: url(unquote($ui.path.image) + '/icons/lock_icon.png') center no-repeat;
+        }
+    }
 }

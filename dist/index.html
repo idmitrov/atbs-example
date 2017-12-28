@@ -142,23 +142,28 @@
                                 <form action="#" method="POST">
                                     <div class="atbs-row">
                                         <div class="atbs-col-12 atbs-margin-bottom">
-                                            <input type="text" placeholder="User ID">
+                                            <input id="user-login" name="username" class="atbs-input-text-wrapper" type="text" placeholder="User ID">
+                                            
+                                            <label for="user-login" class="atbs-icon atbs-icon-user atbs-margin-left"></label>
                                         </div>
 
                                         <div class="atbs-col-12 atbs-margin-bottom">
-                                            <input type="Password" placeholder="Password">
+                                            <input id="user-password" name="password" class="atbs-input-text-wrapper" type="Password" placeholder="Password">
+                                            
+                                            <label for="user-password" class="atbs-icon atbs-icon-lock atbs-margin-left"></label>
                                         </div>
 
                                         <div class="atbs-col-12 atbs-margin-bottom">
                                             <input class="atbs-button atbs-button-default" type="submit" value="Log in">
-                                            <input id="remember-me" type="checkbox">
+                                            
+                                            <input class="atbs-margin-left atbs-v-align-middle" id="remember-me" type="checkbox">
                                             <label for="remember-me">Remember my User ID</label>
                                         </div>
 
                                         <div class="atbs-col-12 atbs-margin-bottom">
                                             <span class="atbs-striped-bottom atbs-striped-color-orange atbs-padding-left atbs-padding-right">
-                                                <a href="#" title="Recover your ID">Forgot your ID</a> or
-                                                <a href="#" title="Recover your password">Password</a>
+                                                <a href="#" class="atbs-text-blue atbs-text-decoration-none" title="Recover your ID">Forgot your ID</a> or
+                                                <a href="#" class="atbs-text-blue atbs-text-decoration-none" title="Recover your password">Password</a>
                                             </span>
                                         </div>
                                         
