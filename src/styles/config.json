@@ -18,10 +18,15 @@
         }
     },
     "font": {
-        "openSans": {
+        "OpenSans": {
             "family": "open-sans",
             "path": "open-sans",
-            "extensions": "eot, ttf"
+            "extensions": "eot, ttf, woff, woff2"
+        },
+        "HelveticaNeueExtended": {
+            "family": "helvetica-neue-extended",
+            "path": "helvetica-neue-extended",
+            "extensions": "eot, ttf, woff, woff2"
         }
     }
 }
