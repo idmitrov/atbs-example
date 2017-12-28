@@ -6,10 +6,18 @@
     for $side in $ui.separations {
         .margin-{$side} {
             margin-{$side}: toUnit(16);
+
+            &.margin-double {
+                margin-{$side}: toUnit(32);
+            }
         }
 
         .padding-{$side} {
-            margin-{$side}: toUnit(16);
+            padding-{$side}: toUnit(16);
+
+            &.padding-double {
+                padding-{$side}: toUnit(32);
+            }
         }
     }
 }
