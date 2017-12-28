@@ -367,9 +367,10 @@ html {
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
-.atbs-row.atbs-c-align-center {
-  -ms-flex-line-pack: center;
-  align-content: center;
+.atbs-row.atbs-h-align-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .atbs-row.atbs-v-align-center {
   -webkit-box-align: center;
