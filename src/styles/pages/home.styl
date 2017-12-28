@@ -2,17 +2,26 @@
     section {
         padding-top: toUnit(32);
         padding-bottom: toUnit(32);
-        
+        font-family: removeQuote($ui.font.OpenSans.family);
+
         h2 {
+            font-family: removeQuote($ui.font.HelveticaNeueExtended.family);
             font-size: toUnit(48);
         }
 
         p {
-            font-size: toUnit(36);
+            font-size: toUnit(18);
         }
 
         .separated-bottom {
             margin-bottom: toUnit(42);
+        }
+    }
+
+    article {
+        h2 {
+            font-family: removeQuote($ui.font.OpenSans.family);
+            font-size: toUnit(32);
         }
     }
 }
